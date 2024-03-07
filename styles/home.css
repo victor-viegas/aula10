@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+@media (max-width:767px) {
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container button {
+        background-color: transparent;
+        border: none;
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .logo-container i {
+        font-size: 30px;
+    }
+
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .input-container {
+        order: 2;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .container-nav {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: rgb(38, 38, 41);
+        display: block;
+    }
+
+    .container-nav#active{
+        left: 0;
+    }
+
+    .container-nav .menu li {
+        padding: 10px;
+    }
+
+    .container-nav .menu li a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo-menu {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo-menu button {
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+    }
+    .logo-menu button i{
+        font-size: 25px;
+    }
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(38, 38, 41);
+    padding: 10px;
+}
+.logo-container {
+    display: flex;
+    align-content: center;
+}
+.logo-container button {
+    display: none;
+}
+.category-list {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(38, 38, 41);
+}
+
+.category-list ul li {
+    display: inline-block;
+}
+
+.input-container {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.input-container input {
+    width: 500px;
+    height: 30px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: black;
+}
+
+.input-container button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-container button i {
+    color: blue;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.cart-shop button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.cart-shop button i {
+    font-size: 20px;
+}
