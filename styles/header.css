@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(213, 213, 213);
+}
+
+@media (max-width:767px) {
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container button {
+        background-color: transparent;
+        border: none;
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .logo-container i {
+        font-size: 30px;
+    }
+
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .input-container {
+        order: 2;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #container-nav {
+        display: block;
+        width: 0px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        background-color: rgb(38, 38, 41);
+        transition: 1s ease;
+        visibility: hidden;
+        overflow-x: hidden;
+        z-index: 10000;
+    }
+
+    #container-nav.active {
+        display: block;
+        width: 60%;
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #container-nav .menu li {
+        display: flex;
+    }
+
+    #container-nav .menu li i {
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+
+
+    #container-nav .menu li a {
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    #container-nav .menu li:hover {
+        background-color: rgb(49, 49, 53);
+    }
+
+    .logo-menu {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #container-nav.active .logo-menu button {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .logo-menu button i {
+        font-size: 25px;
+    }
+
+    .cards-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 300px;
+    }
+
+    .card img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+@media(max-width:825px) {
+    .input-container #search-input {
+        width: 450px;
+    }
+}
+
+@media (min-width:767px) {
+    .logo-container button {
+        display: none;
+    }
+
+    #container-nav .menu {
+        display: none;
+    }
+
+    #container-nav {
+        display: none;
+    }
+}
+
+@media (max-width:575px) {
+    .input-container #search-input {
+        width: 350px;
+    }
+}
+
+@media (max-width:425px) {
+    .input-container #search-input {
+        width: 280px;
+    }
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(38, 38, 41);
+    padding: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-content: center;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(38, 38, 41);
+}
+
+.category-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.category-list ul li {
+    padding: 1rem 5px;
+    transition: .5s ease;
+}
+
+.category-list ul li:hover {
+    background-color: rgb(49, 49, 53);
+}
+
+.category-list li a {
+    padding: 1rem 5px;
+    height: 100%;
+}
+
+.input-container {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.input-container input {
+    width: 500px;
+    height: 30px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: black;
+}
+
+.input-container button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-container button i {
+    color: blue;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.cart-shop button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.cart-shop button i {
+    font-size: 20px;
+}
+
+.logo-menu button {
+    display: none;
+}
+
+#menu {
+    margin: 0;
+}

@@ -16,14 +16,15 @@ new Glider($simpleCarousel, {
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
-    duration: 0.25,
+    dragVelocity: 5,
+    duration: 5,
     arrows: {
         prev: ".js-carousel--simple-prev",
         next: ".js-carousel--simple-next",
     },
     responsive: [
         {
-            breakpoint: 300,
+            breakpoint: 500,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
